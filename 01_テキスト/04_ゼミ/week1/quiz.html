@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>WebExpertコーステンプレート</title>
+  </head>
+  <body>
+    <p>僕の好きなバンドは何でしょう？</p>
+    <button id="button1">King Gnu</button>
+    <button id="button2">髭男</button>
+    <button id="button3">back number</button>
+    <div id="element"></div>
+
+    <script>
+      const element = document.getElementById("element") //  document.getElementById("id")を使うことでHTML要素を取得できる
+      const button1 = document.getElementById("button1")
+      const button2 = document.getElementById("button2")
+      const button3 = document.getElementById("button3")
+
+      const alertMessage1 = function() {
+        element.textContent = "しゅうぞう君に似てる人が。。"
+      }
+
+      const alertMessage2 = function() {
+        element.textContent = "正解！！好きな曲はI Love.. です！"
+      }
+
+      const alertMessage3 = function() {
+        element.textContent = "残念！でもいい趣味してます"
+      }
+
+      button1.onclick = alertMessage1
+      button2.onclick = alertMessage2
+      button3.onclick = alertMessage3
+
+      console.dir(element) // console.dir() を使えば、HTML要素がプロパティに何を持っているのかが分かる
+    </script>
+  </body>
+</html>
