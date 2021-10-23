@@ -22,7 +22,6 @@ addButton.onclick = function() {
   // 入力欄を空にする
   inputElement.value = ""
 }
-
 // 共通の処理：テキストからカードを作成する
 const createCard = function(text) {
   // カードの枠を作る
